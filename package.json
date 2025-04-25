@@ -1,7 +1,19 @@
 {
   "name": "to-do-list",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
+  "release_Date": "25-April-2025",
+  "changes": {
+    "features": [
+      "Created frontend component for the signin/signout page, Header, Sidebar"
+    ],
+    "bug_fixes": [
+      "Resolved login latency issue (Ticket #1234)",""
+    ],
+    "deprecations": [
+      ""
+    ]
+  },
   "type": "module",
   "scripts": {
     "dev": "vite --host",
