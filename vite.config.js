@@ -26,7 +26,8 @@ export default defineConfig({
         '.env',
         // Block paths with ?raw or ?inline
         { path: /(\?raw|\?inline)/, regex: true }
-      ]
+      ],
+      allow: ['../src']
     }
   }
 }) 
