@@ -10,4 +10,5 @@ export default defineConfig({
   // Add base path for deployment if deploying to a subdirectory
   // For example, if deploying to GitHub Pages
 
+
 }) 
