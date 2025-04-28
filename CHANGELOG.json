@@ -18,5 +18,37 @@
                 "Patched CVE-2023-1234"
             ]
         }
+    },
+    {
+        "version": "1.0.1",
+        "date": "2025-04-27",
+        "summary": "Frontend Component Creation",
+        "details": {
+            "features": [
+                ""
+            ],
+            "bugs": [
+                "(!) 'base' option should start with a slash. bugs resolved in the latest version of vite-plugin-pages."
+            ],
+            "security": [
+                ""
+            ]
+        }
+    },
+    {
+        "version": "1.1.0",
+        "date": "2025-04-28",
+        "summary": "Frontend Component Creation",
+        "details": {
+            "features": [
+                "Created the Class Dashoboard component and its subcomponents - NnumberOfStudents, Highest Marks, AverageAttenance, Topperformer, StudentGenderCount and Upcoming Birthdays"
+            ],
+            "bugs": [
+                ""
+            ],
+            "security": [
+                ""
+            ]
+        }
     }
 ]

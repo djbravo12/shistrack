@@ -2,6 +2,7 @@ import NavBar from './Components/Navbar';
 import LoginComponent from './Components/LogInComponent/LoginComponet';
 import LogoutComponent from './Components/LogInComponent/LogoutComponent';
 import StdListComponents from './Components/Student Components/StdListComponents';
+import ClassDashboard from './Components/Class_Dashboard_Component/ClassDashboard';
 import Header from './Components/Header';
 
 import { useState } from 'react';
@@ -32,9 +33,10 @@ function App() {
 
       <div className='grid sm:grid-cols-12  gap-1'>
         <div className='col-span-2'> <NavBar /></div>
-        <div className='col-span-10'><StdListComponents /></div>
+        {/* <div className='col-span-10'><StdListComponents /></div> */}
+        <div className='col-span-10'><ClassDashboard /></div>
+        {/* <ClassDashboard /> */}
         <div className='col-span-12'>Footer</div>
-
       </div>
     </>
   )
