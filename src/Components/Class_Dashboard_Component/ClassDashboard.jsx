@@ -17,13 +17,15 @@ import UpcomingBirthdays from './UpcomingBirthdays';
 class ClassPage extends Component {
     render() {
         return (
-            <div className="p-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-                <NumberOfStudents />
-                <StudentsGenderCount />
-                <AverageAttendance />
-                <HighestMarksList />
-                <UpcomingBirthdays />
-                <TopPerformers />
+            <div className="max-w-6xl flex flex-col mx-auto">
+                <div className='p-4 lg:px-6 grid  gap-4 sm:grid-cols-2 lg:grid-cols-3'>
+                    <NumberOfStudents />
+                    <StudentsGenderCount />
+                    <AverageAttendance />
+                    <HighestMarksList />
+                    <UpcomingBirthdays />
+                    <TopPerformers />
+                </div>
             </div>
         );
     }

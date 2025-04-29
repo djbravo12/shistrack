@@ -50,5 +50,21 @@
                 ""
             ]
         }
+    },
+    {
+        "version": "1.1.0",
+        "date": "2025-04-29",
+        "summary": "Frontend Component Creation",
+        "details": {
+            "features": [
+                "Design the layouts of the Components - NnumberOfStudents, Highest Marks, AverageAttenance, Topperformer, StudentGenderCount and Upcoming Birthdays"
+            ],
+            "bugs": [
+                ""
+            ],
+            "security": [
+                ""
+            ]
+        }
     }
 ]
