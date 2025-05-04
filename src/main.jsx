@@ -1,6 +1,6 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import { BrowserRouter, Routes, Route } from "react-router";
+import { HashRouter, Routes, Route } from "react-router";
 import './index.css'
 import App from './App.jsx'
 import Product from './Components/Product/Product.jsx'
@@ -10,7 +10,7 @@ import AuthComp from './Components/Authantication/Auth.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <BrowserRouter basename="/">
+    <HashRouter basename="/">
       {/* <Routes>
         <Route path="/" element={<App />} >
           <Route path="" element={<Home />} />
@@ -21,6 +21,6 @@ createRoot(document.getElementById('root')).render(
       </Routes> */}
 
       <AuthComp />
-    </BrowserRouter>
+    </HashRouter>
   </StrictMode>,
 )
