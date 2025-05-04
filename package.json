@@ -1,14 +1,15 @@
 {
   "name": "to-do-list",
   "private": true,
-  "version": "1.0.0",
+  "version": "1.1.0",
   "release_Date": "25-April-2025",
   "changes": {
     "features": [
       "Created frontend component for the signin/signout page, Header, Sidebar"
     ],
     "bug_fixes": [
-      "Resolved login latency issue (Ticket #1234)",""
+      "Resolved login latency issue (Ticket #1234)",
+      ""
     ],
     "deprecations": [
       ""
@@ -26,6 +27,7 @@
     "lucide-react": "^0.503.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
+    "react-router": "^7.5.3",
     "tailwindcss": "^4.0.13"
   },
   "devDependencies": {

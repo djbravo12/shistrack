@@ -66,5 +66,21 @@
                 ""
             ]
         }
+    },
+    {
+        "version": "1.2.0",
+        "date": "2025-05-04",
+        "summary": "Frontend Component Creation",
+        "details": {
+            "features": [
+                "Set up the react router and created the routes for the components"
+            ],
+            "bugs": [
+                ""
+            ],
+            "security": [
+                ""
+            ]
+        }
     }
 ]
