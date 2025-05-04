@@ -6,7 +6,7 @@ import tailwindcss from '@tailwindcss/vite'
 export default defineConfig({
   plugins: [react(), tailwindcss(),
   ],
-  base:"/"
+  base: "/shistrack/", // Set the base path for your application
   // Add base path for deployment if deploying to a subdirectory
   // For example, if deploying to GitHub Pages
 

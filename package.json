@@ -3,6 +3,7 @@
   "private": true,
   "version": "1.1.0",
   "release_Date": "25-April-2025",
+  "homepage": "https://djbravo12.github.io/shistrack",
   "changes": {
     "features": [
       "Created frontend component for the signin/signout page, Header, Sidebar"
@@ -19,6 +20,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "lint": "eslint .",
     "preview": "vite preview"
   },
@@ -38,6 +41,7 @@
     "eslint": "^9.21.0",
     "eslint-plugin-react-hooks": "^5.1.0",
     "eslint-plugin-react-refresh": "^0.4.19",
+    "gh-pages": "^6.3.0",
     "globals": "^15.15.0",
     "vite": "^6.2.0"
   }
