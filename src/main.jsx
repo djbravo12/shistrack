@@ -10,7 +10,7 @@ import AuthComp from './Components/Authantication/Auth.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename="/">
       {/* <Routes>
         <Route path="/" element={<App />} >
           <Route path="" element={<Home />} />
