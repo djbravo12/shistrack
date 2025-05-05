@@ -111,7 +111,7 @@ const Header = () => {
                 <div className="hidden lg:flex lg:gap-x-12">
 
                     <NavLink to="/" className={({ isActive }) => `text-sm/6 font-semibold ${isActive ? "text-indigo-700" : "text-gray-900"}`}>Home</NavLink>
-                    <NavLink to="/ClassDashboard" className={({ isActive }) => `text-sm/6 font-semibold ${isActive ? "text-indigo-700" : "text-gray-900"}`}>ClassDashboard</NavLink>
+                    <NavLink to="/Navbar" className={({ isActive }) => `text-sm/6 font-semibold ${isActive ? "text-indigo-700" : "text-gray-900"}`}>Dashboards</NavLink>
                     <NavLink to="/Product" className={({ isActive }) => `text-sm/6 font-semibold ${isActive ? "text-indigo-700" : "text-gray-900"}`}>Product</NavLink>
                     <a href="#" className="text-sm/6 font-semibold text-gray-900">Resources</a>
                     <a href="#" className="text-sm/6 font-semibold text-gray-900">Pricing</a>

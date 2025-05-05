@@ -17,6 +17,7 @@ import {
   User,
   Menu
 } from "lucide-react";
+import { Link, Outlet } from "react-router";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -68,11 +69,11 @@ const Navbar = () => {
             <div className="space-y-3">
               <div className="bg-gray-100 rounded px-2 py-1 flex items-center space-x-2 text-blue-600 font-medium">
                 <LayoutDashboard className="w-4 h-4" />
-                <span>Dashboard</span>
+                <span><Link to="" className={({ isActive }) => `text-sm/6 font-semibold ${isActive ? "text-indigo-700" : "text-gray-900"}`}>Dashboard</Link></span>
               </div>
               <div className="flex items-center space-x-2 text-gray-700">
                 <BarChart className="w-4 h-4" />
-                <span>Product analytics</span>
+                <span><Link to="AttendanceReport">Attendance Reports</Link></span>
               </div>
               <div className="flex items-center space-x-2 text-gray-700">
                 <FileText className="w-4 h-4" />
@@ -146,7 +147,11 @@ const Navbar = () => {
           onClick={() => setIsOpen(false)}
         ></div>
       )}
+      <>
+        <Outlet />
+      </>
     </div>
+
   );
 };
 

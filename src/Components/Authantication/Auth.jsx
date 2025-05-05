@@ -4,7 +4,9 @@ import App from "../../App"
 import Product from "../Product/Product"
 import Solutions from "../Solution/Solutions"
 import Dashboard from "../Dashboard/Dashboard"
-import ClassDashboard from "../Class_Dashboard_Component/ClassDashboard"
+import ClassDashboard from "../navbar/Class_Dashboard_Component/ClassDashboard"
+import AttendanceReport from "../navbar/AttendenceReportComp/AttendenceReport"
+import Navbar from "../navbar/Navbar"
 import { useState } from "react"
 
 const AuthComp = () => {
@@ -32,8 +34,11 @@ const AuthComp = () => {
                     // For authenticated users, show the Dashboard component with the routes to show the dashboard, profile, Result and  other pages.
                     (<Routes >
                         < Route path="/" element={< Dashboard />} >
-                            <Route path="" element={<Home />} />
-                            <Route path="/ClassDashboard" element={<ClassDashboard />} />
+                            <Route path="/Home" element={<Home />} />
+                            <Route path="Navbar" element={<Navbar />} >
+                                <Route index element={<ClassDashboard />} />
+                                <Route path="AttendanceReport" element={<AttendanceReport />} />
+                            </Route>
                             <Route path="/Product" element={<Product />} />
                             {/* <Route path="/shistrack/About" element={<About />} /> */}
                         </Route >

@@ -2,7 +2,7 @@ import NavBar from './Components/navbar/Navbar';
 import LoginComponent from './Components/LogInComponent/LoginComponet';
 import LogoutComponent from './Components/LogInComponent/LogoutComponent';
 import StdListComponents from './Components/Student Components/StdListComponents';
-import ClassDashboard from './Components/Class_Dashboard_Component/ClassDashboard';
+import ClassDashboard from './Components/navbar/Class_Dashboard_Component/ClassDashboard';
 import Header from './Components/Header/Header';
 // import Layout from './layout';
 
