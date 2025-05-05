@@ -95,6 +95,9 @@ const Header = () => {
 
         // </header>
 
+
+
+        // For authenticated users, show the Dashboard component with the routes to show the dashboard, profile, Result and  other pages.
         <header className="bg-white shadow-sm">
             <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
                 <div className="flex lg:flex-1">
@@ -103,6 +106,15 @@ const Header = () => {
                         <span className="text-[#8c52ff] text-2xl">Shistrack</span>
                         {/* <img className="h-8 w-auto" src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=600" alt=""/> */}
                     </a>
+                </div>
+
+                <div className="hidden lg:flex lg:gap-x-12">
+
+                    <NavLink to="/" className={({ isActive }) => `text-sm/6 font-semibold ${isActive ? "text-indigo-700" : "text-gray-900"}`}>Home</NavLink>
+                    <NavLink to="/ClassDashboard" className={({ isActive }) => `text-sm/6 font-semibold ${isActive ? "text-indigo-700" : "text-gray-900"}`}>ClassDashboard</NavLink>
+                    <NavLink to="/Product" className={({ isActive }) => `text-sm/6 font-semibold ${isActive ? "text-indigo-700" : "text-gray-900"}`}>Product</NavLink>
+                    <a href="#" className="text-sm/6 font-semibold text-gray-900">Resources</a>
+                    <a href="#" className="text-sm/6 font-semibold text-gray-900">Pricing</a>
                 </div>
             </nav>
         </header>

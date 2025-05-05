@@ -4,6 +4,7 @@ import App from "../../App"
 import Product from "../Product/Product"
 import Solutions from "../Solution/Solutions"
 import Dashboard from "../Dashboard/Dashboard"
+import ClassDashboard from "../Class_Dashboard_Component/ClassDashboard"
 import { useState } from "react"
 
 const AuthComp = () => {
@@ -17,6 +18,7 @@ const AuthComp = () => {
             {
                 isAuthenticated ?
                     (
+                        // For unauthenticated users, show the App component with the routes and home page for advertisement
                         <Routes >
                             < Route path="/" element={< App />} >
                                 <Route path="" element={<Home />} />
@@ -27,10 +29,11 @@ const AuthComp = () => {
                         </Routes >)
 
                     :
+                    // For authenticated users, show the Dashboard component with the routes to show the dashboard, profile, Result and  other pages.
                     (<Routes >
                         < Route path="/" element={< Dashboard />} >
                             <Route path="" element={<Home />} />
-                            <Route path="/Solutions" element={<Solutions />} />
+                            <Route path="/ClassDashboard" element={<ClassDashboard />} />
                             <Route path="/Product" element={<Product />} />
                             {/* <Route path="/shistrack/About" element={<About />} /> */}
                         </Route >
