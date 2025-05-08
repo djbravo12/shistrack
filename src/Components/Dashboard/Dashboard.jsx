@@ -7,7 +7,7 @@ const Dashboard = () => {
             <Header />
             <Outlet />
             <div>
-            <h1 className="text-9xl">Yes, I have done......</h1>
+            {/* <h1 className="text-9xl">Yes, I have done......</h1> */}
             </div>
             <h1>Welcome to your Dashboard</h1>
             <p>Here’s your personalized content.</p>

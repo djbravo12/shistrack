@@ -73,7 +73,7 @@ const Navbar = () => {
               </div>
               <div className="flex items-center space-x-2 text-gray-700">
                 <BarChart className="w-4 h-4" />
-                <span><Link to="AttendanceReport">Attendance Reports</Link></span>
+                <span><Link to="AttendanceReport" className={({ isActive }) => `text-sm/6 font-semibold ${isActive ? "text-indigo-700" : "text-gray-900"}`}>Attendance Reports</Link></span>
               </div>
               <div className="flex items-center space-x-2 text-gray-700">
                 <FileText className="w-4 h-4" />
