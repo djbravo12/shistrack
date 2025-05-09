@@ -1,4 +1,4 @@
-import NavBar from './Components/navbar/Navbar';
+// import NavBar from './Components/navbar/Navbar';
 import LoginComponent from './Components/LogInComponent/LoginComponet';
 import LogoutComponent from './Components/LogInComponent/LogoutComponent';
 import StdListComponents from './Components/Student Components/StdListComponents';

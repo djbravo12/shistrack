@@ -331,7 +331,7 @@ const Header = () => {
                 <PopoverGroup className="hidden lg:flex lg:gap-x-12">
                     <Popover className="relative">
                         <PopoverButton className="flex items-center gap-x-1 text-sm/6 font-semibold text-gray-900">
-                            Product
+                            Reports
                             <ChevronDownIcon aria-hidden="true" className="size-5 flex-none text-gray-400" />
                         </PopoverButton>
 
@@ -373,9 +373,9 @@ const Header = () => {
                         </PopoverPanel>
                     </Popover>
 
-                    <a href="#" className="text-sm/6 font-semibold text-gray-900">
+                    <NavLink to="Navbar" className="text-sm/6 font-semibold text-gray-900">
                         Features
-                    </a>
+                    </NavLink>
                     <a href="#" className="text-sm/6 font-semibold text-gray-900">
                         Marketplace
                     </a>
@@ -437,12 +437,12 @@ const Header = () => {
                                 >
                                     Features
                                 </a>
-                                <a
-                                    href="#"
+                                <NavLink to="product"
+
                                     className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
                                 >
                                     Marketplace
-                                </a>
+                                </NavLink>
                                 <a
                                     href="#"
                                     className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"

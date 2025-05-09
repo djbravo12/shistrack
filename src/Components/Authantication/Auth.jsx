@@ -34,11 +34,11 @@ const AuthComp = () => {
                     // For authenticated users, show the Dashboard component with the routes to show the dashboard, profile, Result and  other pages.
                     (<Routes >
                         < Route path="/" element={< Dashboard />} >
-                            <Route path="/Home" element={<Home />} />
-                            <Route path="Navbar" element={<Navbar />} >
-                                <Route index element={<ClassDashboard />} />
-                                <Route path="AttendanceReport" element={<AttendanceReport />} />
-                            </Route>
+                            <Route path="" element={<Home />} />
+                            <Route path="Navbar" element={<Navbar />} />
+                            <Route element={<ClassDashboard />} />
+                            {/* <Route path="AttendanceReport" element={<AttendanceReport />} /> */}
+                            {/* </Route> */}
                             <Route path="/Product" element={<Product />} />
                             {/* <Route path="/shistrack/About" element={<About />} /> */}
                         </Route >
